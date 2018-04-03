@@ -1,0 +1,337 @@
+/*  列表开始    */
+.ds_table {
+    background-color: white;
+    border-collapse: collapse;
+    border: 1px solid #eee;
+    width: 100%;
+    font-family: "Microsoft YaHei UI";
+    WORD-BREAK: break-all;
+    WORD-WRAP: break-word
+}
+
+.ds_table th {
+    background-color: #e4e6eb;
+    color: #a2a5b4;
+    border-bottom: 0 solid #ddd;
+    font-weight: bold;
+    white-space: nowrap;
+    padding-left: 3px;
+}
+
+.ds_table td {
+    padding-left: 3px;
+}
+
+.ds_table tr {
+    height: 40px;
+}
+
+.ds_table tbody tr:hover {
+    background-color: #f5f5f5;
+}
+
+.ds_no_data_alert {
+    text-align: center;
+    font-size: 14px;
+}
+
+/*  列表结束    */
+
+/*  按钮开始    */
+button {
+    background-color: white;
+    color: #1ab394;
+    height: 30px;
+    border: solid 1px #1ab394;
+    border-radius: 3px;
+}
+
+button:hover {
+    background-color: #1ab394;
+    color: white;
+}
+
+.button_ipt {
+    background-color: #1ab394;
+    color: white;
+    height: 30px;
+    border: solid 1px #1ab394;
+    border-radius: 0px;
+}
+
+.button_op {
+    background-color: #1ab394;
+    color: white;
+    height: 30px;
+    border: solid 1px #1ab394;
+    border-radius: 3px;
+}
+
+.button_op:hover {
+    background-color: #18a689;
+    color: white;
+}
+
+.button_op_gray {
+    background-color: lightgrey;
+    color: #1ab394;
+    height: 30px;
+    border: solid 1px lightgrey;
+    border-radius: 3px;
+}
+
+.button_op_gray:hover {
+    color: #18a689;
+    background-color: lightgrey;
+}
+
+/*  按钮结束    */
+
+/*  下拉样式开始    */
+
+.cwDropdown {
+    background-color: white;
+    color: #1ab394;
+    height: 25px;
+    border: solid 1px #1ab394;
+    border-radius: 3px;
+}
+
+.cwDropdown:hover {
+    background-color: #1ab394;
+    color: white;
+}
+
+.cwDropdownbody {
+    display: none;
+    background-color: white;
+    position: absolute;
+    top: 28px;
+    z-index: 1000;
+    border: solid 1px lightgrey;
+    overflow: hidden;
+    padding: 5px;
+    border-radius: 3px;
+}
+
+.cwDropdownbodyitem {
+    margin: 5px 2px 5px 2px;
+    padding: 5px;
+}
+
+.cwDropdownbodyitem:hover {
+    background-color: #f5f5f5;
+    cursor: pointer;
+}
+
+/*  下拉样式结束    */
+
+/*  弹窗开始    */
+
+.dialog900 .modal-dialog {
+    width: 900px;
+    margin: 30px auto;
+}
+
+.dialog1000 .modal-dialog {
+    width: 1000px;
+    margin: 30px auto;
+}
+
+.dialog350 .modal-dialog {
+    width: 350px;
+    margin: 100px auto;
+}
+
+.modal-header2 {
+    background: -webkit-gradient(linear, 0% 0%, 100% 0%, from(#3992be), to(#95d7f1));
+    background: -moz-linear-gradient(left, #3992be, #95d7f1);
+    background: -o-linear-gradient(left, #3992be, #95d7f1);
+    background: -ms-linear-gradient(left, #3992be, #95d7f1);
+    background: linear-gradient(left, #3992be, #95d7f1);
+    height: 30px;
+    width: 100%;
+    color: white;
+    font-family: "Microsoft YaHei";
+    padding: 5px;
+}
+
+/*  弹窗结束    */
+
+.on-red:hover {
+    color: red;
+}
+
+.on-lightgrey:hover {
+    color: lightgrey;
+    cursor: pointer;
+}
+
+.general_panne {
+    margin-bottom: 5px;
+    border: solid 1px #eee;
+    padding: 10px;
+    background-color: white;
+    overflow: hidden;
+    position: relative;
+}
+
+.key_word {
+    font-weight: bold;
+}
+
+.left_body_menu_header {
+    padding: 10px 0px 10px 30px;
+    border-top: solid 1px lightgrey;
+    color: lightgrey;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.left_body_menu {
+    padding: 10px 0px 10px 43px;
+    cursor: pointer;
+}
+
+.left_body_menu.select {
+    background-color: #44b549;
+    color: white;
+}
+
+.left_body_menu.non_select:hover {
+    background-color: #f5f5f5;
+}
+
+.sub_body_right {
+    float: left;
+    width: 77%;
+    margin-left: 10px;
+}
+
+.sub_body_left {
+    width: 22%;
+    float: left;
+    padding: 0px;
+}
+
+.app_status {
+    border-radius: 3px;
+    color: white;
+    padding: 3px;
+    overflow: hidden;
+    width: 50px;
+    text-align: center;
+}
+
+.row_alert {
+    border-radius: 3px;
+    color: white;
+    padding: 3px;
+    width: 50px;
+    text-align: center;
+    background-color: red;
+}
+
+.app_logo_info {
+    padding: 10px 0px 0px 10px;
+}
+
+.app_text {
+    margin-bottom: 5px;
+    float: left;
+    padding-left: 10px;
+    padding-top: 10px;
+}
+
+.alert-backdrop {
+    position: absolute;
+    z-index: 999998;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.alert-container {
+    position: absolute;
+    top: 100px;
+    left: 40%;
+    color: white;
+    z-index: 999999;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    overflow: hidden;
+    margin: 0 0 6px;
+    padding: 15px;
+    width: 300px;
+    -moz-border-radius: 3px 3px 3px 3px;
+    -webkit-border-radius: 3px 3px 3px 3px;
+    border-radius: 3px 3px 3px 3px;
+    background-position: 15px center;
+    background-repeat: no-repeat;
+    -moz-box-shadow: 0 0 12px #999999;
+    -webkit-box-shadow: 0 0 12px #999999;
+    box-shadow: 0 0 12px #999999;
+    opacity: 0.9;
+    -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=90);
+    filter: alpha(opacity=90);
+}
+
+.alert-success {
+    background-color: #51A351;
+}
+
+.alert-error {
+    background-color: #BD362F;
+}
+
+.alert-info {
+    background-color: #2F96B4;
+}
+
+.alert-warning {
+    background-color: #F89406;
+}
+
+.button_di {
+    background-color: white;
+    color: #efa231;
+    height: 30px;
+    border: solid 1px #efa231;
+    border-radius: 3px;
+}
+
+.button_di_gray {
+    background-color: lightgrey;
+    color: #efa231;
+    height: 30px;
+    border: solid 1px #efa231;
+    border-radius: 3px;
+}
+
+.button_di:hover {
+    background-color: white;
+    color: #efa231;
+}
+
+.button_di_gray:hover {
+    background-color: lightgrey;
+    color: #efa231;
+}
+
+.button_di_error {
+    background-color: white;
+    color: red;
+    height: 30px;
+
+    border-radius: 3px;
+}
+
+.button_di_error:hover {
+    background-color: white;
+    color: red;
+}
+
+.NotNull{
+    color: red;
+}

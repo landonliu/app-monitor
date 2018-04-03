@@ -1,0 +1,48 @@
+
+<div style="margin: 10px 0px 10px 0px;overflow: hidden">
+    <div style="float: left">
+        <input placeholder="输入计算器名称" ng-model="filter" type="text">
+    </div>
+    <div style="float: left;margin-left: 10px;">
+        <a ng-click="search_server();" class="king-btn-demo king-btn king-radius king-primary" title="搜索">
+            <i class="fa fa-search btn-icon"></i>搜索
+        </a>
+    </div>
+    <div style="float: right">
+        <a ng-click="create_server();" class="king-btn-demo king-btn king-radius king-primary" title="搜索">
+            创建
+        </a>
+    </div>
+</div>
+
+<div>
+    <table border="1" st-safe-src="all_servers" st-table="paging_servers" class="ds_table">
+        <tr>
+            <th>id</th>
+            <th>计算机名称</th>
+            <th style="width: 15%">IP</th>
+            <th style="width: 10%">内存</th>
+            <th style="width: 10%">CPU</th>
+            <th style="width: 10%">操作系统</th>
+            <th style="width: 20%">说明</th>
+            <th style="width: 10%">到期时间</th>
+            <th style="width: 15%">操作</th>
+        </tr>
+        <tr ng-repeat="row in paging_servers">
+            <td>{{ row.num }}</td>
+            <td>{{ row.name }}</td>
+            <td>{{ row.ip }}</td>
+            <td>{{ row.ram }}</td>
+            <td>{{ row.cpu }}</td>
+            <td>{{ row.operating_system }}</td>
+            <td>{{ row.des }}</td>
+            <td>{{ row.when_expired }}</td>
+            <td>
+                <button ng-click="modify_server(row);">修改</button>&emsp;
+                <button ng-click="delete_server(row);">删除</button>
+            </td>
+        </tr>
+    </table>
+</div>
+
+

@@ -1,0 +1,50 @@
+<div style="margin: 10px 0px 10px 0px;overflow: hidden">
+    <div style="float: left">
+        <input placeholder="输入用户姓名" ng-model="filter" type="text">
+    </div>
+    <div style="float: left;margin-left: 10px;">
+        <a ng-click="search_user();" class="king-btn-demo king-btn king-radius king-primary" title="搜索" >
+            <i class="fa fa-search btn-icon"></i>搜索
+        </a>
+    </div>
+    <div style="float: right">
+        <a ng-click="create_user();" class="king-btn-demo king-btn king-radius king-primary" title="新建">
+            新建
+        </a>
+    </div>
+</div>
+
+<div>
+    <table border="1" st-safe-src="all_users" st-table="paging_users" class="ds_table">
+        <tr>
+            <th>姓名</th>
+            <th>英文名</th>
+            <th style="width: 8%">性别</th>
+            <th style="width: 10%">年龄</th>
+            <th style="width: 10%">毕业年限</th>
+            <th style="width: 10%">民族</th>
+            <th style="width: 10%">婚姻状况</th>
+            <th style="width: 10%">文化程度</th>
+            <th style="width: 15%">政治面貌</th>
+            <th style="width: 15%">操作</th>
+        </tr>
+        <tr ng-repeat="row in all_users | filter:filter">
+            <td >{{ row.name }}</td>
+            <td>{{ row.enName }}</td>
+            <td>{{ row.sex }}</td>
+            <td>{{ row.age }}</td>
+            <td>{{ row.graYear }}</td>
+            <td>{{ row.Nation}}</td>
+            <td>{{ row.marriage }}</td>
+            <td>{{ row.culture }}</td>
+            <td>{{ row.political }}</td>
+
+            <td>
+                <button ng-click="modify_user(row);">修改</button>&emsp;
+                <button ng-click="delete_user(row);">删除</button>
+            </td>
+        </tr>
+    </table>
+</div>
+
+

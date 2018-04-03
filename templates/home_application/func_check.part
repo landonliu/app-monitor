@@ -1,0 +1,39 @@
+<!--开发框架功能点更新	 -->
+<div> 
+	<h3 class="mb5">功能推荐：</h3>
+	<table class='table table-bordered'>
+		<tbody>
+			<tr class='alert-success'>
+				<td>
+					<i class="glyphicon glyphicon-star-empty"></i>功能开关
+				</td>
+			<tr>
+			<tr id="func_tr">
+				<td colspan="2">
+					<div class="form-horizontal form-columns-2">
+						<div class="form-group">
+							<label for="inputUser1" class="col-sm-2 control-label">功能开关：</label>
+							<div class="col-sm-10">
+								<div class="btn-group op_btn_group">
+									<button onclick="FUNC_CHECK.switch_func(this, 1)" type="button" name="func_switch" class="btn  btn-box ${'btn-success active' if is_enabled else ''}"> 开  </button>
+									<button onclick="FUNC_CHECK.switch_func(this, 0)" style="margin-left:-5px;" type="button" name="func_switch" class="btn btn-box ${'' if is_enabled else 'btn-success active'}"> 关  </button>
+								</div>
+							</div>
+						</div>
+						<div class="form-group">
+							<label for="inputUser1" class="col-sm-2 control-label">功能：</label>
+							<div class="col-sm-10">
+								<button onclick="FUNC_CHECK.excute_func(this)" style="width: 77px" type="button" name="is_op_excute_y" value="1" class="btn btn-box btn-primary ">运 行</button>
+							</div>
+						</div>
+					</div>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+<script>
+	$("#func_demo").click(function(){
+		$("#func_tr").toggle();
+	});
+</script>

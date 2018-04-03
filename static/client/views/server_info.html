@@ -1,0 +1,67 @@
+<div dragable dialog-title="填写服务器信息"></div>
+<div style="padding: 10px;">
+    <table border="1" class="ds_table">
+        <tr>
+            <th>名称</th>
+            <td>
+                <input ng-model="new_server.name" type="text"/>
+                <span class="NotNull">
+                    *
+                </span>
+            </td>
+            <th>
+                IP地址
+            </th>
+            <td>
+                <input ng-model="new_server.ip" type="text"/>
+                <span class="NotNull">
+                    *
+                </span>
+            </td>
+        </tr>
+        <tr>
+            <th>内存</th>
+            <td>
+                <select ng-model="new_server.ram">
+                    <option value="">请选择</option>
+                    <option value="2G">2G</option>
+                    <option value="4G">4G</option>
+                    <option value="8G">8G</option>
+                    <option value="16G">16G</option>
+                </select>
+            </td>
+            <th>cpu</th>
+            <td>
+                <select ng-model="new_server.cpu">
+                    <option value="">请选择</option>
+                    <option value="2核">2核</option>
+                    <option value="4核">4核</option>
+                    <option value="8核">8核</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <th>过期时间</th>
+            <td>
+                <input ng-datepicker ng-model="new_server.when_expired" type="text">
+            </td>
+            <th>
+                描述
+            </th>
+            <td>
+                <input ng-model="new_server.des" type="text"/>
+                <span class="NotNull">
+                    *
+                </span>
+            </td>
+        </tr>
+    </table>
+</div>
+
+<div style="margin: 5px;text-align: center">
+    <button ng-click="save();" class="king-btn-demo king-btn king-radius king-success" title="保存">保存</button>
+    &emsp;
+    <button cw-cancel-modal class="king-btn-demo king-btn king-radius king-warning" title="配置">
+        返回
+    </button>
+</div>

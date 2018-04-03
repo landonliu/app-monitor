@@ -1,0 +1,14 @@
+.modal-header {
+    border-bottom: 1px solid #E5E5E5 !important;
+    border-radius: 4px;
+    background: #33A8E8 !important;
+    color: #FFF !important;
+    padding-left: 10px !important;
+    padding-top: 1px !important;
+    height: 50px;
+}
+
+/*ng-grid表格选中颜色*/
+.ngRow.selected {
+     /*background-color: #57b4e5 !important;*/
+}

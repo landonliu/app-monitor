@@ -1,0 +1,38 @@
+<div style="padding: 5px;">
+
+
+    <table border="1" st-safe-src="all_servers" st-table="paging_servers" class="ds_table">
+        <thead>
+        <tr>
+            <th style="cursor: pointer;width: 50%;" st-sort="name">服务器名称</th>
+            <th style="cursor: pointer" st-sort="ip">IP</th>
+        </tr>
+
+        <tr>
+            <th>
+                <input st-search="name" placeholder="输入名称进行过滤" type="text" />
+            </th>
+            <th></th>
+        </tr>
+
+        </thead>
+
+        <tbody>
+        <tr ng-repeat="server in paging_servers">
+            <td>{{ server.name }}</td>
+            <td>{{ server.ip }}</td>
+        </tr>
+        </tbody>
+
+        <tfoot>
+        <tr>
+            <td colspan="4" class="text-right">
+                <div st-pagination="" st-items-by-page="28" st-displayed-pages="5"></div>
+            </td>
+        </tr>
+        </tfoot>
+    </table>
+
+
+</div>
+
